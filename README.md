@@ -1,3 +1,2 @@
-# messi VS Ronaldo SIUUUUU
-
-SMU Global Business Plan Competition Safena Landing Page
+# PulseBridge Technology
+SMU Global Business Plan Competition
