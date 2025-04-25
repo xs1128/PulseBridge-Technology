@@ -185,7 +185,21 @@ body {
   margin-bottom: 10px;
 }
 
+.section-heading h1 {
+  margin-top: 20px;
+  color: #2a2a2a;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
 .section-heading h4 em {
+  font-style: normal;
+  color: #4b8ef1;
+}
+
+.section-heading h1 em {
   font-style: normal;
   color: #4b8ef1;
 }
@@ -1513,7 +1527,8 @@ Free Quote
 }
 
 .free-quote .section-heading h6,
-.free-quote .section-heading h4 {
+.free-quote .section-heading h4, 
+.free-quote .section-heading h1 {
   color: #fff;
 }
 
@@ -1624,6 +1639,10 @@ footer #search button {
 footer #search button:hover {
   background-color: #fff;
   color: #4b8ef1;
+}
+
+.footer-widget {
+    padding: 70px 30px 0px 30px;
 }
 
 .footer-widget .logo img {
