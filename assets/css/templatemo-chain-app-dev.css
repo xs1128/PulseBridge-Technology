@@ -127,7 +127,7 @@ p {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: #afafaf;
+  color: #111111;
 }
 
 img {
@@ -221,7 +221,7 @@ body {
 .white-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #4b8ef1 !important;
+  color: #a5c9ff !important;
   text-transform: capitalize;
   font-size: 15px;
   background-color: #fff;
@@ -237,7 +237,7 @@ body {
 }
 
 .white-button a:hover {
-  background-color: #4b8ef1;
+  background-color: #5182cb;
   color: #fff !important;
 }
 
@@ -928,21 +928,31 @@ Banner Style
 
 .main-banner .left-content {
   margin-right: 15px;
+  margin-left: -20px;
 }
 
 .main-banner .left-content h2 {
+/* .pb-headline { */
   z-index: 2;
   position: relative;
-  font-weight: 700;
+  font-weight: 525;
   line-height: 70px;
-  font-size: 50px;
+  font-size: 84px;
   margin-bottom: 20px;
+  margin-left: -5px;  /* Thingy so that the title aligns with the subtitle */
+  color: white;
+  
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
 .main-banner .left-content p {
+/* .pb-subheadline { */
   margin-bottom: 45px;
-  color: #2a2a2a;
-  font-weight: 400;
+  color: #f0f0f0;
+  font-weight: 375;
+  font-size: 20px;
+
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-banner .left-content .first-button {
@@ -951,6 +961,8 @@ Banner Style
 
 .main-banner .left-content .white-button {
   display: inline-block;
+  
+  
 }
 
 .main-banner .right-image {
@@ -964,9 +976,19 @@ Banner Style
 }
 
 .main-banner .left-content .white-button a {
-  background-color: #4b8ef1;
+  background-color: #8ebbff;
   color: #fff !important;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
 }
+
+.main-banner .left-content .white-button a:hover {
+  background-color: #6f9fe6;
+  color: #fff !important;
+  transition-duration: 0.25s;
+}
+
 
 /* 
 ---------------------------------------------
@@ -1982,7 +2004,7 @@ responsive
     position: relative;
     font-weight: 700;
     line-height: 70px;
-    font-size: 50px;
+    /* font-size: 50px; */
     margin-bottom: 20px;
   }
 
@@ -1992,6 +2014,8 @@ responsive
 }
 
 @media (max-width: 992px) {
+  /* If the screen is too narrow then the blue thing disappears */
+
   .header-area {
     background-color: #fff;
   }
@@ -2010,6 +2034,21 @@ responsive
     background-color: #4b8ef1;
     color: #fff !important;
   }
+
+  .main-banner .left-content {
+    margin-left: 0px;
+  }
+
+  .pb-headline {
+    color: black;
+    text-shadow: 0px 0px 0px black;
+    font-size: 10vmax;
+  }
+  .pb-subheadline {
+    color: #2a2a2a;
+    text-shadow: 0px 0px 0px black;
+  }
+
   form#contact {
     overflow: hidden;
   }
