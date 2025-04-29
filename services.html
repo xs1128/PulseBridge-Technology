@@ -24,6 +24,73 @@ TemplateMo 570 Chain App Dev
 https://templatemo.com/tm-570-chain-app-dev
 
 -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .service-section {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .img-container {
+            height: 100%;
+            min-height: 250px;
+            overflow: hidden;
+        }
+        
+        .img-container img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .content-wrapper {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .service-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #212529;
+        }
+        
+        .service-description {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Custom button styles that match the design */
+        .btn-dark {
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+        
+        .btn-light {
+            background-color: #e9ecef;
+            border-color: #e9ecef;
+            color: #212529;
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+        
+        .btn-light:hover {
+            background-color: #dee2e6;
+            border-color: #dee2e6;
+        }
+    </style>
     <!-- Additional CSS Files -->
     <link
       crossorigin="anonymous"
@@ -38,13 +105,13 @@ https://templatemo.com/tm-570-chain-app-dev
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1232.0">
-    <!-- ***** Preloader Start ***** -->
+    <!-- ** Preloader Start ** -->
     <div class="js-preloader" id="js-preloader">
       <div class="preloader-inner">
         <div class="dots"></div>
       </div>
     </div>
-    <!-- ***** Preloader End ***** --><!-- ***** Header Area Start ***** -->
+    <!-- ** Preloader End ** --><!-- ** Header Area Start ** -->
 
     <header
       class="header-area header-sticky wow slideInDown"
@@ -55,36 +122,36 @@ https://templatemo.com/tm-570-chain-app-dev
         <div class="row">
           <div class="col-12">
             <nav class="main-nav">
-              <!-- ***** Logo Start ***** --><!-- 
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="Chain App Dev">
-            </a> 
-            --><!-- ***** Logo End ***** --><!-- ***** Menu Start ***** -->
+              <!-- ** Logo Start ** --> 
+            <a href="./index" class="logo">
+              <img src="assets/images/regular-logo.png" alt="Chain App Dev" style="width: 50px; height: auto;">
+            </a>  
+            <!-- ** Logo End ** --><!-- ** Menu Start ** -->
               <ul class="nav">
                 <li class="scroll-to-section">
-                  <a href="./index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li class="scroll-to-section">
-                  <a class="active" href="./services.html">Services</a>
+                  <a class="active" href="./services">Services</a>
                 </li>
-                <li class="scroll-to-section"><a href="./about.html">About</a></li>
+                <li class="scroll-to-section"><a href="./about">About</a></li>
                 <li class="scroll-to-section">
-                  <a href="./product.html">Pricing</a>
+                  <a href="./pricing">Pricing</a>
                 </li>
                 <li>
                   <div class="gradient-button">
-                    <a href="./product.html" id="modal_trigger">Sign Up</a>
+                    <a href="./pricing" id="modal_trigger">Sign Up</a>
                   </div>
                 </li>
               </ul>
               <a class="menu-trigger"> <span>Menu</span> </a>
-              <!-- ***** Menu End ***** -->
+              <!-- ** Menu End ** -->
             </nav>
           </div>
         </div>
       </div>
     </header>
-    <!-- ***** Header Area End ***** -->
+    <!-- ** Header Area End ** -->
 
     <div class="popupContainer" id="modal" style="display: none">
       <div class="popupHeader"><span class="header_title">Login</span></div>
@@ -202,6 +269,68 @@ https://templatemo.com/tm-570-chain-app-dev
               </div>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=84NF7PPMl-bnJN4f"></iframe>
             </div>
+            <div class="container py-5">
+        <!-- First section: Text on left, Image on right -->
+        <div class="service-section row mb-4">
+            <div class="col-md-6">
+                <div class="content-wrapper">
+                    <h2 class="service-title">Emergency Danger Detection</h2>
+                    <p class="service-description">A subheading for this section, as long or as short as you like. This system helps identify potential hazards and alerts emergency services when needed.</p>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div class="img-container">
+                    <img src="/assets/images/regular-logo.png" alt="Two pears on a light background" class="img-fluid" style="width: 100px; height: auto;">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second section: Image on left, Text on right -->
+        <div class="service-section row mb-4">
+            <div class="col-md-6 p-0 order-md-1 order-2">
+                <div class="content-wrapper">
+                    <h2 class="service-title">Contact & Locate Doctors</h2>
+                    <p class="service-description">A subheading for this section, as long or as short as you like. Find and connect with medical professionals in your area quickly.</p>
+                </div>
+            </div>
+            <div class="col-md-6 p-0 order-md-0 order-1">
+                <div class="img-container">
+                    <img src="/assets/images/regular-logo.png" alt="Two pears on a light background" class="img-fluid" style="width: 100px; height: auto;">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Third section: Text on left, Image on right -->
+        <div class="service-section row mb-4">
+            <div class="col-md-6">
+                <div class="content-wrapper">
+                    <h2 class="service-title">Medical Records Access</h2>
+                    <p class="service-description">Securely access your medical history and important health documents. Having your information readily available helps healthcare providers deliver appropriate care.</p>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div class="img-container">
+                     <img src="/assets/images/regular-logo.png" alt="Two pears on a light background" class="img-fluid" style="width: 100px; height: auto;">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fourth section: Image on left, Text on right -->
+        <div class="service-section row mb-4">
+            <div class="col-md-6 p-0 order-md-1 order-2">
+                <div class="content-wrapper">
+                    <h2 class="service-title">Emergency Transport</h2>
+                    <p class="service-description">Request emergency transportation to medical facilities. Our network ensures that help arrives quickly when every minute counts.</p>
+                </div>
+            </div>
+            <div class="col-md-6 p-0 order-md-0 order-1">
+                <div class="img-container">
+                    <img src="/assets/images/regular-logo.png" alt="Two pears on a light background" class="img-fluid" style="width: 100px; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
           </div>
         </div>
       </div>
@@ -231,7 +360,7 @@ https://templatemo.com/tm-570-chain-app-dev
       
       <ul>
         <li><a href="">Home</a></li>
-        <li><a href="./services.html">Services</a></li>
+        <li><a href="./services">Services</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Testimonials</a></li>
         <li><a href="">Pricing</a></li>
@@ -292,5 +421,7 @@ https://templatemo.com/tm-570-chain-app-dev
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/popup.js"></script>
     <script src="assets/js/custom.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
