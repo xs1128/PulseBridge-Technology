@@ -110,7 +110,7 @@ https://templatemo.com/tm-570-chain-app-dev
 </div>
 
 <div class="col-lg-4">
-<div class="pricing-item-regular"><span class="price">$29/mo</span>
+<div class="pricing-item-regular" id="left-card"><span class="price">$29/mo</span>
 
 <h4>Basic Connect</h4>
 
@@ -130,7 +130,7 @@ https://templatemo.com/tm-570-chain-app-dev
 </div>
 
 <div class="col-lg-4">
-<div class="pricing-item-regular"><span class="price">$39/mo</span>
+<div class="pricing-item-regular hovered" id="middle-card"><span class="price">$39/mo</span>
 
 <h4>Premium Connect</h4>
 
@@ -150,7 +150,7 @@ https://templatemo.com/tm-570-chain-app-dev
 </div>
 
 <div class="col-lg-4">
-<div class="pricing-item-regular"><span class="price">$49/mo</span>
+<div class="pricing-item-regular" id="right-card"><span class="price">$49/mo</span>
 
 <h4>Elite Health Guardian</h4>
 
@@ -245,5 +245,26 @@ PulseBridge: Your life. Connected.</p>
 </div>
 </div>
 </footer>
-<!-- Scripts --><script src="vendor/jquery/jquery.min.js"></script><script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/js/owl-carousel.js"></script><script src="assets/js/animation.js"></script><script src="assets/js/imagesloaded.js"></script><script src="assets/js/popup.js"></script><script src="assets/js/custom.js"></script></body>
+<!-- Scripts -->
+ <script>
+  const middleCard = document.getElementById("middle-card");
+  const leftCard = document.getElementById("left-card");
+  const rightCard = document.getElementById("right-card");
+
+  function removeHover() {
+    middleCard.classList.remove("hovered");
+  }
+
+  function addHover() {
+    middleCard.classList.add("hovered");
+  }
+
+  leftCard.addEventListener("mouseenter", removeHover);
+  leftCard.addEventListener("mouseleave", addHover);
+
+  rightCard.addEventListener("mouseenter", removeHover);
+  rightCard.addEventListener("mouseleave", addHover);
+</script>
+
+ <script src="vendor/jquery/jquery.min.js"></script><script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/js/owl-carousel.js"></script><script src="assets/js/animation.js"></script><script src="assets/js/imagesloaded.js"></script><script src="assets/js/popup.js"></script><script src="assets/js/custom.js"></script></body>
 </html>
