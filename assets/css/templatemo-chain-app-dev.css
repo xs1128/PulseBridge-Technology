@@ -1389,22 +1389,75 @@ The Clients
   margin-right: 18%;
 }
 
+.pricing-item-regular:before,
+.pricing-item-regular:after,
+.pricing-item-regular:hover:before,
+.pricing-item-regular:hover:after {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.pricing-item-regular:before,
+.pricing-item-regular:after {
+  opacity: 0.3;
+}
+
+.pricing-item-regular:hover:before,
+.pricing-item-regular:hover:after {
+  opacity: 1; /* keep 1 unless you want to crossfade */
+}
+
 .pricing-item-regular {
   margin-top: 30px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
   border-radius: 50px;
-  padding: 90px 30px;
+  padding: 120px 30px;
   text-align: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 
+.pricing-item-regular:hover {
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
+  margin-top: 0px;
+  border-radius: 50px;
+  padding: 120px 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.pricing-item-regular:hover:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/pro-table-top.png);
+  z-index: 0;
+  content: '';
+  width: 281px;
+  height: 251px;
+}
+
+.pricing-item-regular:hover:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/pro-table-bottom.png);
+  z-index: 0;
+  content: '';
+  width: 100%;
+  height: 201px;
+}
+
 .pricing-item-regular:before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../images/regular-table-top.png);
+  background-image: url(../images/pro-table-top.png);
   z-index: 0;
   content: '';
   width: 274px;
@@ -1415,7 +1468,7 @@ The Clients
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url(../images/regular-table-bottom.png);
+  background-image: url(../images/pro-table-bottom.png);
   z-index: 0;
   content: '';
   width: 370px;
@@ -1440,7 +1493,7 @@ The Clients
 
 .pricing-item-regular .icon img {
   width: 120px;
-  height: 106px;
+  height: 120;
   margin-bottom: 30px;
 }
 
@@ -1517,7 +1570,7 @@ The Clients
 
 .pricing-item-pro .icon img {
   width: 120px;
-  height: 106px;
+  height: 120;
   margin-bottom: 30px;
 }
 
