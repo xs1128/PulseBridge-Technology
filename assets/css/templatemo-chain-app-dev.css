@@ -1160,35 +1160,35 @@ anan was here
 */
 
 .first-service .icon {
-  background-image: url(../images/danger-icon.png);
+  background-image: url(../images/service-danger-icon.png);
 }
 
 .first-service:hover .icon {
-  background-image: url(../images/danger-icon-hover.png);
+  background-image: url(../images/service-danger-icon-hover.png);
 }
 
 .second-service .icon {
-  background-image: url(../images/locate-icon.PNG);
+  background-image: url(../images/service-location-icon.png);
 }
 
 .second-service:hover .icon {
-  background-image: url(../images/locate-icon-hover.PNG);
+  background-image: url(../images/service-location-icon-hover.png);
 }
 
 .third-service .icon {
-  background-image: url(../images/reminder-icon.PNG);
+  background-image: url(../images/service-reminder-icon.png);
 }
 
 .third-service:hover .icon {
-  background-image: url(../images/reminder-icon-hover.PNG);
+  background-image: url(../images/service-reminder-icon-hover.png);
 }
 
 .fourth-service .icon {
-  background-image: url(../images/data-icon.png);
+  background-image: url(../images/service-data-icon.png);
 }
 
 .fourth-service:hover .icon {
-  background-image: url(../images/data-icon-hover.PNG);
+  background-image: url(../images/service-data-icon-hover.png);
 }
 
 .service-item:hover {
