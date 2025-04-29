@@ -1214,17 +1214,21 @@ About Us
 
 /* 
 ---------------------------------------------
-The Clients
+The TEAM
 ---------------------------------------------
 */
 
 .the-clients {
-  margin-top: 130px;
+  margin-top: 80px;
 }
 
 .the-clients  .section-heading {
   text-align: center;
   margin-bottom: 80px;
+}
+
+.the-clients .section-heading h4 {
+  font-size: 48px;
 }
 
 .the-clients  .section-heading p {
@@ -1237,16 +1241,29 @@ The Clients
   position: relative;
 }
 
+
 .menu .thumb h4 {
-  margin-bottom: 0px;
-  font-size: 20px;
+  /* margin-bottom: 10px; */
+  font-size: 30px;
   color: #2a2a2a;
+
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.menu .thumb:hover h4 {
+  font-size: 36px;
 }
 
 .menu .thumb span.date {
+  font-size: 16px;
   display: inline-block;
   margin-top: 0px;
   color: #afafaf;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.menu .thumb:hover span.date {
+  font-size: 18px;
 }
 
 .menu .thumb span.category,
@@ -1261,22 +1278,33 @@ The Clients
 
 .the-clients .naccs .menu div {
   color: #fff;
-  font-size: 15px;
-  margin-bottom: 15px;
+  font-size: 10px;
+  margin-bottom: 30px;
   margin-top: 15px;
-  text-align: left;
+  text-align: right;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0px 30px;
   cursor: pointer;
   position: relative;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.the-clients .naccs .menu div.active h4,
+/* .the-clients .naccs .menu div.active h4,
 .the-clients .naccs .menu div.active i,
 .the-clients .naccs .menu div.active span.rating,
 .the-clients .naccs .menu div.active .thumb {
   color: #4b8ef1;
+  font-size: 30px;
+}
+*/
+
+.the-clients .naccs .menu div.active h4 {
+  color: #4b8ef1;
+  font-size: 36px;
+}
+
+.the-clients .naccs .menu div.active span.date {
+  font-size: 18px;
 }
 
 .the-clients ul.nacc {
@@ -2230,6 +2258,7 @@ responsive
   }
   .about-us .section-heading {
     text-align: center;
+    font-size: 20px;
   }
   .about-us .left-image {
     margin-right: 30px;
