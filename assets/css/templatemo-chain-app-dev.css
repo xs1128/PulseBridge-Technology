@@ -1433,8 +1433,50 @@ The TEAM
 }
 
 .client-content div {
+  /* TODO: Team memmber picture div */
   flex: 0 0 auto;
   margin: 10px;
+
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  color: #0000;
+  padding: 0;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px;
+}
+
+.client-content div span {
+  display: block;
+  position: relative;
+  /* top: 50%; */
+  left: 50%;
+  font-size: 0;
+
+  text-align: center;
+  vertical-align: top;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  color: #ffffff00;
+
+  height: 0;
+  width: 0;
+}
+
+.client-content div:hover {
+  background-color: #3f6caf;
+  border-radius: px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.17);
+}
+
+.client-content div:hover span {
+  /* TODO: Show the team member name when hovering */
+  font-size: 24px;
+  /* top: -105%; */
+  left: 0%;
+
+  height: 10%;
+  width: 100%;
+
+  color: #ffffff;
 }
 
 .the-clients .nacc .thumb .client-content p {
@@ -1452,7 +1494,7 @@ The TEAM
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  display: inline;
+  display: block;
 }
 
 .the-clients .nacc .thumb .down-content .right-content {
