@@ -1354,6 +1354,7 @@ The TEAM
   font-size: 10px;
   margin-bottom: 30px;
   margin-top: 15px;
+  margin-right: 25px;
   text-align: right;
   align-items: center;
   padding: 0px 30px;
@@ -1370,6 +1371,7 @@ The TEAM
   font-size: 30px;
 }
 */
+
 
 .the-clients .naccs .menu div.active h4 {
   color: #4b8ef1;
@@ -2231,7 +2233,11 @@ responsive
   }
   .main-banner .left-content h2 {
     color: #2a2a2a;
-    margin-right: 0;
+    
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+    /* font-size: 15vmax; */
   }
   .main-banner .left-content p {
     color: #afafaf;
@@ -2249,11 +2255,12 @@ responsive
   .pb-headline {
     color: black;
     text-shadow: 0px 0px 0px black;
-    font-size: 10vmax;
+    text-align: center;
   }
   .pb-subheadline {
     color: #2a2a2a;
     text-shadow: 0px 0px 0px black;
+    text-align: center;
   }
 
   form#contact {
@@ -2307,7 +2314,7 @@ responsive
   .about-us .gradient-button,
   .about-us span {
     text-align: center;
-    display: block;
+    /* display: block; */
   }
   .about-us .right-image {
     margin-top: 30px;
@@ -2348,7 +2355,14 @@ responsive
 @media (max-width: 767px) {
   .the-clients .naccs .menu div {
     text-align: center;
+    padding: 1px 5px;
+    margin-right: 0px;
   }
+  .main-banner .left-content h2 {
+    font-size: clamp(20px, 16vw, 84px);
+    text-align: center;
+  }
+
   footer .section-heading h4 {
     color: #2a2a2a;
   }
@@ -2442,10 +2456,14 @@ responsive
   .our-portfolio .section-heading,
   .about-us .section-heading,
   .about-us .about-item,
-  .about-us p,
   .about-us .main-green-button {
     text-align: center;
   }
+  .about-us p {
+    padding: 10px;
+    text-align: justify;
+  }
+
   .our-portfolio .section-heading .line-dec {
     margin: 0 auto;
   }
