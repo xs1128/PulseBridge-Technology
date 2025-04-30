@@ -1423,7 +1423,7 @@ The TEAM
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px 30px;
+  padding: 60px 10px;
   background-image: url(../images/client-bg.png);
   background-size: cover;
   border-radius: 50px;
