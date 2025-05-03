@@ -1625,7 +1625,7 @@ The Clients
 
 .pricing-item-regular span.price {
   font-size: 40px;
-  color: #000;
+  color: #000000;
   position: absolute;
   font-weight: 700;
   z-index: 1;
@@ -1656,7 +1656,7 @@ The Clients
 }
 
 .pricing-item-regular ul li.non-function {
-  color: #afafaf;
+  color: #000000;
   text-decoration: line-through;
 }
 
